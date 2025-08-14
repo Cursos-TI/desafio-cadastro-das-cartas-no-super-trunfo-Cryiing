@@ -4,7 +4,7 @@ int main (){
       // Declaração das variáveis da primeira carta
     char estado;
     char codigo[20];
-    char cidade[20];
+    char cidade[40];
     int populacao;
     float area;
     float pib;
@@ -14,7 +14,7 @@ int main (){
 
     char estado2;
     char codigo2[20];
-    char cidade2[20];
+    char cidade2[40];
     int populacao2;
     float area2;
     float pib2;
@@ -29,8 +29,8 @@ int main (){
     printf("Digite a letra do estado seguida de um número: ");
     scanf("%s", codigo);
  
-    printf("Digite o nome da cidade: ");
-    scanf("%s", cidade);
+    printf("Digite o nome da cidade: "); //Corrigido para ler nomes com espaços
+    scanf(" %[^\n]", cidade);
 
     printf("Digite o numero de habitantes da cidade: ");
     scanf("%d", &populacao);
@@ -58,8 +58,8 @@ int main (){
     printf("Digite a letra do estado seguida de um número: ");
     scanf("%s", codigo2);
  
-    printf("Digite o nome da cidade: ");
-    scanf("%s", cidade2);
+    printf("Digite o nome da cidade: "); //Corrigido para ler nomes com espaços
+    scanf(" %[^\n]", cidade2);
 
     printf("Digite o numero de habitantes da cidade: ");
     scanf("%d", &populacao2);
@@ -75,11 +75,11 @@ int main (){
 
      // Exibe os dados da primeira carta
    
-    printf("\n\n Carta 1: \n Estado: %c \n Codigo: %s \n Nome da Cidade: %s \n População: %d Pessoas \n Área: %f km² \n PIB: %f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turistico); 
+    printf("\n\n Carta 1: \n Estado: %c \n Codigo: %s \n Nome da Cidade: %s \n População: %d Pessoas \n Área: %.2f km² \n PIB: %2.f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turistico); 
      
     // Exibe os dados da primeira carta
 
-    printf("\n\nCarta 2: \n Estado: %c \n Codigo: %s \n Nome da Cidade: %s \n População: %d pessoas \n Área: %f km² \n PIB: %f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
+    printf("\n\nCarta 2: \n Estado: %c \n Codigo: %s \n Nome da Cidade: %s \n População: %d pessoas \n Área: %2.f km² \n PIB: %2.f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
 
 
 
