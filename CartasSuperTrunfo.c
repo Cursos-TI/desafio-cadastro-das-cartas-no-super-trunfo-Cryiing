@@ -27,7 +27,7 @@ int main (){
     scanf(" %s", estado); // Lê um caractere (com espaço antes para ignorar Enter)
     
     printf("Digite a letra do estado seguida de um número: ");
-    scanf("%s", codigo);
+    scanf(" %s", codigo);
  
     printf("Digite o nome da cidade: "); //Corrigido para ler nomes com espaços
     scanf(" %[^\n]", cidade);
@@ -56,7 +56,7 @@ int main (){
     scanf(" %s", estado2);
     
     printf("Digite a letra do estado seguida de um número: ");
-    scanf("%s", codigo2);
+    scanf(" %s", codigo2);
  
     printf("Digite o nome da cidade: "); //Corrigido para ler nomes com espaços
     scanf(" %[^\n]", cidade2);
@@ -75,11 +75,11 @@ int main (){
 
      // Exibe os dados da primeira carta
    
-    printf("\n\n Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d Pessoas \n Área: %.2f km² \n PIB: %2.f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turistico); 
+    printf("\n\n Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d Pessoas \n Área: %.2f km² \n PIB: %.2f Bilhões de reais \n Pontos Turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turistico); 
      
     // Exibe os dados da primeira carta
 
-    printf("\n\nCarta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d pessoas \n Área: %.2f km² \n PIB: %2.f Bilhões de reais \n Número de Pontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
+    printf("\n\nCarta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d pessoas \n Área: %.2f km² \n PIB: %.2f Bilhões de reais \n  Pontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
 
 
 
