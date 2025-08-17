@@ -1,24 +1,11 @@
 #include <stdio.h>
 
 int main (){
-      // Declaração das variáveis da primeira carta
-    char estado[3];
-    char codigo[20];
-    char cidade[40];
-    int populacao;
-    float area;
-    float pib;
-    int turistico;
-
-    // Declaração das variáveis da segunda carta
-
-    char estado2[3];
-    char codigo2[20];
-    char cidade2[40];
-    int populacao2;
-    float area2;
-    float pib2;
-    int turistico2;
+      // Declaração das variáveis da primeira e segunda carta
+    char estado[4], estado2[4], codigo[4], codigo2[4], cidade[40], cidade2[40];
+    int populacao, populacao2, turistico, turistico2;
+    float area, area2, pib, pib2, densidade, densidade2, capita, capita2;
+    
 
     printf("SuperTrunfo \n"); // Mensagem inicial do jogo
  
@@ -44,7 +31,8 @@ int main (){
     printf("Digite o numero de pontos turísticos na cidade: ");
     scanf("%d", &turistico);
 
-
+    densidade = (float) (populacao/area);
+    capita = (pib * 1000000000.0) / populacao; 
 
      // Mensagem antes de cadastrar a segunda carta
     printf("\n\n\nSalvo com sucesso... \n\n\n");
@@ -73,23 +61,39 @@ int main (){
     printf("Digite o numero de pontos turísticos na cidade: ");
     scanf("%d", &turistico2);
 
+   
+    densidade2 = (float) (populacao2/area2);
+    capita2 = (pib2 * 1000000000.0) / populacao2; // PIB convertido para reais
+
      // Exibe os dados da primeira carta
    
-    printf("\n\n Carta 1: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d Pessoas \n Área: %.2f km² \n PIB: %.2f Bilhões de reais \n Pontos Turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turistico); 
-     
-    // Exibe os dados da primeira carta
+    printf("\n\nCarta 1: "
+    "\n Estado: %s"
+    "\n Codigo: %s"
+    "\n Nome da Cidade: %s"
+    "\n População: %d Pessoas"
+    "\n Área: %.2f km²"
+    "\n PIB: %.2f Bilhões de reais"
+    "\n Pontos Turísticos: %d"
+    "\n Densidade Populacional: %.2f hab/km²"
+    "\n PIB per Capita: %.2f reais \n",
+    estado, codigo, cidade, populacao, area, pib, turistico, densidade, capita);
 
-    printf("\n\nCarta 2: \n Estado: %s \n Codigo: %s \n Nome da Cidade: %s \n População: %d pessoas \n Área: %.2f km² \n PIB: %.2f Bilhões de reais \n  Pontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2);
-
-
-
-
-
-
-
+    
+     printf("\n\nCarta 2: "
+     "\n Estado: %s"
+     "\n Codigo: %s"
+     "\n Nome da Cidade: %s"
+     "\n População: %d Pessoas"
+     "\n Área: %.2f km²"
+     "\n PIB: %.2f Bilhões de reais"
+     "\n Pontos Turísticos: %d"
+     "\n Densidade Populacional: %.2f hab/km²"
+     "\n PIB per Capita: %.2f reais \n",
+     estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2, densidade2, capita2);
 
 
 
        
-    return 0;
+ return 0;
 }
