@@ -93,7 +93,9 @@ int main (){
      estado2, codigo2, cidade2, populacao2, area2, pib2, turistico2, densidade2, capita2);
 
 
-
+printf("\nPressione Enter para sair...");
+getchar(); // lê o enter pendente
+getchar(); // espera novo enter do usuário
        
  return 0;
 }
