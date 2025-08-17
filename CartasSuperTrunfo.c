@@ -67,7 +67,7 @@ int main (){
 
      // Exibe os dados da primeira carta
    
-    printf("\n\nCarta 1: "
+    printf("\n\n--- Carta 1 ---"
     "\n Estado: %s"
     "\n Codigo: %s"
     "\n Nome da Cidade: %s"
@@ -80,7 +80,7 @@ int main (){
     estado, codigo, cidade, populacao, area, pib, turistico, densidade, capita);
 
     
-     printf("\n\nCarta 2: "
+     printf("\n\n--- Carta 2 ---"
      "\n Estado: %s"
      "\n Codigo: %s"
      "\n Nome da Cidade: %s"
