@@ -36,7 +36,7 @@ int main()
     scanf("%d", &turistico);
 
     densidade = (float)populacao / area;
-    capita = (pib * 1e6) / populacao; 
+    capita = (pib * 1e9) / populacao / 1000; // PIB per capita em mil reais
     super1 = (float)populacao + area + (float)pib + (float)turistico + capita + (1.0f / densidade);
 
     printf("\n\nSalvo com sucesso...\n");
@@ -65,7 +65,7 @@ int main()
     scanf("%d", &turistico2);
 
     densidade2 = (float)populacao2 / area2;
-    capita2 = (pib2 * 1e6) / populacao2;
+    capita2 = (pib2 * 1e9) / populacao2 / 1000; // PIB per capita em mil reais
     super2 = (float)populacao2 + area2 + (float)pib2 + (float)turistico2 + capita2 + (1.0f / densidade2);
 
     // dados da primeira carta
